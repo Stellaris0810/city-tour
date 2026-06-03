@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import CityListView from '@/views/Cities/CityListView.vue'
 import CitySpotsView from '@/views/Cities/CitySpotsView.vue'
@@ -6,7 +6,7 @@ import SpotDetailView from '@/views/Cities/SpotDetailView.vue'
 
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',

@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/city-tour/',   // ← 加這行
   plugins: [
     vue(),
     vueDevTools(),
@@ -17,8 +18,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  //加入這個設定後，當執行 npm run dev 自動打開
-  server:{
-    open:true,
+  server: {
+    open: true, //加入這個設定後，當執行 npm run dev 自動打開
   },
 });
